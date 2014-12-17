@@ -24,6 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
  m <- x$getmean()
+ ##if m is not empty,display "getting cached data, and then exit
  if(!is.null(m)) {
          message("getting cached data")
          return(m)
